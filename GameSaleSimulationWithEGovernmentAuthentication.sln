@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSaleSimulationWithEGovernmentAuthentication", "GameSaleSimulationWithEGovernmentAuthentication\GameSaleSimulationWithEGovernmentAuthentication.csproj", "{01ED9800-077D-4BC0-8CB9-5D2C5553A82F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01ED9800-077D-4BC0-8CB9-5D2C5553A82F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01ED9800-077D-4BC0-8CB9-5D2C5553A82F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01ED9800-077D-4BC0-8CB9-5D2C5553A82F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01ED9800-077D-4BC0-8CB9-5D2C5553A82F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8246D8BC-8010-494D-90E3-023E5DDCE06C}
+	EndGlobalSection
+EndGlobal
