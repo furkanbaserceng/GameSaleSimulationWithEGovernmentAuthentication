@@ -12,9 +12,9 @@ namespace GameSaleSimulationWithEGovernmentAuthentication.Business.Concrete
     {
         public bool Validate(Gamer gamer)
         {
-            if(gamer.GamerFirstName=="Furkan" && gamer.GamerLastName=="Başer" 
+            if(gamer.GamerFirstName=="Salih" && gamer.GamerLastName=="Başer" 
                                               && gamer.NationalIdentityNumber==123456789
-                                              && gamer.BirthYear==1900)
+                                              && gamer.BirthYear==1975)
             {
                 return true;
             }

@@ -16,7 +16,8 @@ namespace GameSaleSimulationWithEGovernmentAuthentication.Business.DependenyReso
         public override void Load()
         {
             Bind<IGamerService>().To<GamerManager>();
-            Bind<IUserValidationService>().To<EStateUserValidationManager>();
+           // Bind<IUserValidationService>().To<EStateUserValidationManager>();
+            Bind<IUserValidationService>().To<FakeUserValidationManager>();
 
             Bind<ICampaignService>().To<CampaignManager>();
         }

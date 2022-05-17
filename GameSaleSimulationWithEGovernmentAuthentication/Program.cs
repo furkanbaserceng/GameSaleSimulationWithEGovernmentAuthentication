@@ -23,12 +23,24 @@ namespace GameSaleSimulationWithEGovernmentAuthentication
                 GamerFirstName = "Furkan",
                 GamerLastName = "Başer",
                 BirthYear = 1900,
-                NationalIdentityNumber = 00000000000  //bilgiler yanlış verildiğinden mernisden geçemez.
+                NationalIdentityNumber = 00000000000  
+                //bilgiler yanlış verildiğinden mernisden geçemez.
+                //programın son halinde BusinessModulde FakeUserValidationManager aktif edildi.
+                //ilgili kısım EStateUserValidationManager e çekildiğinde gamer 1 in eklenemediği görülebilir.
+                //gerçek vatandaşlık bilgileri girildiği takdirde gamer1 başarılı biçimde sisteme dahil olabilir.
+            };
 
+            Gamer gamer2 = new Gamer
+            {
+                GamerFirstName = "Salih",
+                GamerLastName = "Başer",
+                BirthYear = 1975,
+                NationalIdentityNumber = 123456789
             };
 
             IGamerService gamerService = InstanceFactory.GetInstance<IGamerService>();
-            gamerService.Add(gamer1);
+            gamerService.Add(gamer1); // gamer1 oyuncusu gerçek mernis verilerine uymadığından dolayı eklenemez.
+            gamerService.Add(gamer2); // gamer2 oyuncusu fake servise göre uygun olduğundan eklenir.
 
             Campaign campaign1 = new Campaign
             {
